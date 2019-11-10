@@ -2,9 +2,14 @@
   Mturk random code:
 </h1>
 
+<div 
+     id="rand_var" style="text-align: center">
+</div>
+
 <script>
   var num = Math.floor((Math.random() * 100) + 1);
 </script>
 
-num
+document.getElementById("rand_var").innerHTML = num;
+
 
