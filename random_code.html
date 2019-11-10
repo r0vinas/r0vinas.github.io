@@ -1,7 +1,7 @@
 <h1>
   Mturk random code:
 </h1>
-
+<body>
 <div 
      id="rand_var" style="text-align: center">
 </div>
@@ -12,13 +12,12 @@
 </script>
 
 <?php
-// The message
-$message = "Line 1\r\nLine 2\r\nLine 3";
+$to = "odioamicomputadora@gmail.com";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: odioamicomputadora@gmail.com" . "\r\n" .
+"CC: odioamicomputadora@gmail.com";
 
-// In case any of our lines are larger than 70 characters, we should use wordwrap()
-$message = wordwrap($message, 70, "\r\n");
-
-// Send
-mail('odioamicomputadora@gmail.com', 'My Subject', $message);
+mail($to,$subject,$txt,$headers);
 ?>
-
+</body>
